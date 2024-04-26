@@ -1,0 +1,409 @@
+@charset "utf-8";
+html{
+	overflow-y:scroll;
+}
+html,body{
+	margin:0;
+	padding:0;
+	height:100%;
+}
+body{
+	top:0px;
+	width:100%;
+	font-size:85%;
+	line-height:1.4;
+	font-family:'Verdana','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+img{
+	border:none;
+}
+table{
+	border-collapse:collapse;
+}
+a{
+	color:#323232;
+	text-decoration:none;
+}
+a:hover{
+	color:#323232;
+	text-decoration:none;
+}
+.clear{
+	clear:both;
+}
+
+#container{
+	margin:0 auto;
+	padding:0px;
+	width:862px;
+	position:relative;
+	height:auto !important;
+	min-height:88.9%;
+	background:url("../images/bg.gif") repeat-y;
+	background-position:center top;
+}
+#main{
+	margin:0px auto;
+	width:862px;
+	padding-bottom:200px;
+}
+/* ヘッダー等 --------------------------------*/
+header {
+	width: 862px;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+	border-top:8px solid #D2691E;
+}
+.header-text {
+	font-family: Arial, sans-serif;
+	font-size: 32px;
+	font-weight: bold;
+	color: #333;
+	margin-left: 20px; /* テキストの余白 */
+}
+.header-logo {
+	width: 161px; /* ロゴの幅 */
+	height: 80px; /* ロゴの高さ */
+	margin-right: 20px; /* ロゴの余白 */
+}
+/* メニューバー ------------------------------*/
+.left_menu{
+	float:left;
+	margin:0 0 0 7px;
+}
+.left_menu td a{
+	display:block;
+}
+.on_mouse{
+	border-bottom:1px solid #bababa;
+	border-left:5px solid #D2691E;
+	width:165px;
+	padding:6px 0 6px 5px;
+	font-weight:bold;
+}
+.on_mouse:hover{
+	border-bottom:1px solid #D2691E;
+	background-color:#D2691E;
+	color:#ffffff;
+}
+.on_page{
+	border-bottom:1px solid #D2691E;
+	border-left:5px solid #D2691E;
+	width:165px;
+	padding:6px 0 6px 5px;
+	font-weight:bold;
+	background-color:#D2691E;
+	color:#ffffff;
+}
+.on_page:hover{
+	border-bottom:1px solid #D2691E;
+	background-color:#D2691E;
+	color:#ffffff;
+}
+.banner{
+	margin:15px 0 8px 22px;
+}
+.banner2{
+	margin:15px 0 8px 5px;
+}
+/* メインページ ------------------------------*/
+.right_menu{
+	float:right;
+	margin:0 6px 0 0;
+}
+.news{
+	padding:30px 0 0 15px;
+}
+.bar_top{
+	background-image:url("../images/bar.gif");
+	background-repeat:no-repeat;
+	font-weight:bold;
+	width:610px;
+	height:35px;
+	padding:9px 0 0 15px;
+}
+.news td{
+	border-bottom:1px dotted #a5a5a5;
+	width:615px;
+	height:65px;
+	line-height:1.4;
+	padding-left:5px;
+}
+.news td a:hover{
+	text-decoration:underline;
+}
+.news_b{
+	background-color:#f4f4fa;
+}
+.address{
+	position:absolute;
+	bottom:90px;
+	width:625px;
+	line-height:1.4;
+	border-top:5px double #a5a5a5;
+	padding:5px 0 0 15px;
+	clear:both;
+}
+/* コンテンツページ ---------------------*/
+.top_image {
+	position: relative;
+	background-color: #ffffff;
+}
+.top_image img {
+	display: block;
+	opacity: 0.9;
+}
+.top_image_content {
+	position: absolute;
+	top: 10px;
+    left: 10px;
+}
+.contents{
+	margin:0 20px 0px 30px;
+	width:590px;
+}
+.contents_bar{
+	background-image:url("../images/bar_contents_kaki.gif");
+	background-repeat:no-repeat;
+	font-size:110%;
+	font-weight:bold;
+	width:625px;
+	height:65px;
+	padding:28px 0 0 35px;
+	margin:2px 0 0 0;
+}
+.contents_title{
+	font-size:120%;
+	font-weight:bold;
+	margin:5px 0;
+}
+.registration_inner{
+	width:580px;
+	margin:0 auto;
+}
+.registration_bar{
+	color:#ffffff;
+	background-image:url("../images/bar_registration.gif");
+	background-repeat:no-repeat;
+	font-size:120%;
+	font-weight:bold;
+	width:585px;
+	height:24px;
+	padding:0 0 0 25px;
+}
+.registration_title_prior{
+	margin:30px 0 10px;
+}
+.registration_title_top{
+	margin:80px 0 10px;
+}
+.registration_title{
+	font-size:120%;
+	font-weight:bold;
+	margin:70px 0 3px;
+}
+.supporting_title{
+	font-size:115%;
+	font-weight:bold;
+	margin:0 0 3px;
+}
+.page_top{
+	position:absolute;
+	right:36px;
+	background-image:url("../images/icon01.gif");
+	background-repeat:no-repeat;
+	padding:0 0 0 18px;
+	margin:40px 0 0 0;
+	font-size:90%;
+	text-decoration:underline;
+	color:#4c4c4c;
+}
+.totop{
+	text-align:right;
+	text-decoration:underline;
+	color:#4c4c4c;
+	font-size:90%;
+}
+.page_link{
+	text-align:center;
+}
+.link{
+	text-decoration:underline;
+	margin:0 25px;
+}
+.name_greeting{
+	float:right;
+	width:260px;
+
+}
+.summary{
+	margin:0 0 40px 0;
+}
+.summary a{
+	color:#0000ff;
+}
+table.participation_fees td{
+	border:1px solid #a5a5a5;
+	padding:3px 12px;
+	text-align:center;
+}
+table.isgm td{
+	border:1px solid #a5a5a5;
+	padding:3px 12px;
+	text-align:left;
+}
+.committee td{
+	padding:3px 8px;
+}
+.red{
+	color:#d21c1c;
+}
+.term{
+	border:1px solid #000;
+	text-align:center;
+	background-color:#f2fafd;
+	width:450px;
+	margin:15px auto 0;
+	padding:10px;
+	font-weight:bold;
+}
+.term2{
+	border:3px solid #ce1222;;
+	text-align:left;
+	width:549px;
+	margin:20px auto 0;
+	padding:10px;
+	font-weight:600;
+}
+.menu_bt{
+	text-align:center;
+	display:block;
+	padding:10px 0 5px 0;
+	width:250px;
+	height:25px;
+	color:#FFFFFF;
+	font-weight:bold;
+	background-image:url("../images/button.gif");
+	text-decoration:none;
+}
+.menu_btn{
+	text-align:center;
+	display:block;
+	padding:10px 0 5px 0;
+	width:250px;
+	height:25px;
+	color:#FFFFFF;
+	font-weight:bold;
+	background-image:url("../images/button.gif");
+	text-decoration:none;
+}
+a.menu_bt:hover{
+	background-image:url("../images/button_on.gif"); 
+	color:#FFFFFF;
+}
+
+.menu_btL{
+	text-align:center;
+	display:block;
+	padding:10px 0 5px 0;
+	width:250px;
+	height:40px;
+	color:#FFFFFF;
+	font-weight:bold;
+	background-image:url("../images/button_L.gif");
+	text-decoration:none;
+}
+a.menu_btL:hover{
+	background-image:url("../images/button_L_on.gif"); 
+	color:#FFFFFF;
+}
+.btn_style{
+	margin:10px auto;
+}
+.btn_style02{
+	margin:20px auto;
+	width:520px;
+	height:40px;
+}
+.btn_style03{
+	margin:20px auto;
+}
+.underline{
+	text-decoration:underline;
+}
+table.publish td01{
+	width:20px;
+	padding:3px 5px;
+}
+table.publish td02{
+	width:230px;
+	padding:3px 5px;
+}
+table.publish tr{
+	border:1px solid #a5a5a5;
+	width:300px;
+}
+table.program_tbl td{
+	padding:3px 2px 3px 5px;
+	border:1px solid #a5a5a5;
+}
+.date_indent{
+	text-indent:-7.5em;
+	padding-left:7.5em;
+}
+.indent_3{
+	text-indent:-3em;
+	padding-left:3em;
+}
+.indent_4{
+	text-indent:-4em;
+	padding-left:4em;
+}
+.indent_5{
+	text-indent:-5em;
+	padding-left:5em;
+}
+.indent_6{
+	text-indent:-6em;
+	padding-left:6em;
+}
+/* フッター --------------------------------*/
+.information{
+	position:absolute;
+	left:6px;
+	bottom:40px;
+	width:850px;
+	padding:8px 0 2px 0;
+	text-align:center;
+	border-top:1px solid #cacaca;
+	font-size:90%;
+	clear:both;
+}
+.information a{
+	color:#0000ff;
+}
+#copyright{
+	text-align:center;
+	color:#323232;
+	background-color:#ededed;
+	padding:10px 0;
+	position:absolute;
+	left:6px;
+	bottom:0px;
+	width:850px;
+	font-size:80%;
+	clear:both;
+}
+
+/* 国際シンポジウム ------------------------------*/
+.left_photo{
+	float:left;
+	width:20%;
+}
+.right_txt{
+	float:right;
+	width:80%;
+}
